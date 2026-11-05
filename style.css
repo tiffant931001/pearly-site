@@ -355,3 +355,190 @@ p {
   font-size: 18px;
   letter-spacing: 2px;
 }
+
+/* ===================================================== */
+/* ---------- 手機版 / 平板版（920px 以下）---------- */
+/* 電腦版（920px 以上）完全不受影響，都只在這個區塊裡覆蓋 */
+/* ===================================================== */
+
+@media (max-width: 920px) {
+  body {
+    font-size: 18px;
+  }
+
+  /* 上方導覽列：變矮、左右留白縮小 */
+  .header {
+    height: auto;
+    min-height: 96px;
+    padding: 16px 20px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .issue {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .site-name {
+    font-size: 24px;
+  }
+
+  .nav {
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .nav a {
+    padding: 6px 10px;
+    font-size: 16px;
+  }
+
+  .ig {
+    font-size: 16px;
+  }
+
+  /* 內容區：左右留白縮小 */
+  .content {
+    padding: 20px 16px 40px 16px;
+  }
+
+  .card {
+    padding: 24px 20px;
+    margin-bottom: 16px;
+  }
+
+  .tag {
+    margin-bottom: 18px;
+    font-size: 16px;
+  }
+
+  /* 封面：改成上下排，高度自動 */
+  .cover {
+    flex-direction: column;
+    height: auto;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+
+  .logo-card {
+    padding: 32px 24px;
+    min-height: 260px;
+  }
+
+  .heart {
+    width: 130px;
+    top: 20px;
+  }
+
+  .logo-text {
+    font-size: 76px;
+  }
+
+  .logo-sub {
+    font-size: 13px;
+    letter-spacing: 2px;
+  }
+
+  .logo-desc {
+    font-size: 19px;
+  }
+
+  /* 角色卡：改成滿版寬度，角色才不會被壓成 0 */
+  .character-card {
+    width: 100%;
+    padding: 16px;
+  }
+
+  /* 作品預覽 / 功能展示：改成上下排 */
+  .preview-row,
+  .features-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .more {
+    font-size: 17px;
+    margin-top: 18px;
+  }
+
+  /* 關於我：照片在上、資料在下 */
+  .about-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .photo {
+    width: 100%;
+    height: 320px;
+  }
+
+  .info-row {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 14px;
+  }
+
+  .value {
+    font-size: 19px;
+  }
+
+  .feature h3 {
+    font-size: 21px;
+    margin: 10px 0;
+  }
+
+  .feature p {
+    font-size: 17px;
+  }
+
+  /* 色票：一行三個 */
+  .colors-row {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .swatch {
+    flex: 0 0 calc((100% - 28px) / 3);
+  }
+
+  .color-box {
+    height: 84px;
+  }
+
+  .color-name {
+    font-size: 16px;
+  }
+
+  .color-code {
+    font-size: 14px;
+  }
+
+  /* 網站連結：文字換行不要爆版 */
+  .link-item {
+    padding: 18px 16px;
+    gap: 16px;
+    margin-bottom: 14px;
+  }
+
+  .chip {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .link-title {
+    font-size: 19px;
+  }
+
+  .link-url {
+    font-size: 15px;
+    overflow-wrap: anywhere;
+    word-break: break-all;
+  }
+
+  /* 頁尾 */
+  .footer {
+    padding: 24px 20px;
+    font-size: 14px;
+  }
+}

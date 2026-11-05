@@ -5,7 +5,7 @@
   if (!card) return;
 
   var DOZE_AFTER = 20 * 1000;      // 20 秒沒人點 → 開始打盹（粉紅底,不變紫）
-  var NIGHT_AFTER = 2 * 60 * 1000; // 2 分鐘沒人點 → 戴睡帽睡覺（背景變紫）
+  var NIGHT_AFTER = 60 * 1000;     // 1 分鐘沒人點 → 戴粉色睡帽睡覺（背景變紫）
   var NAP_LENGTH = 30 * 1000;      // 睡著 30 秒後自己起床
   var HOLD = 450;                  // 按住 0.45 秒算長按(跟 App 一樣)
 

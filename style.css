@@ -161,9 +161,7 @@ p {
 /* 圖片只顯示上面一段,高度固定 360px */
 .shot img {
   width: 100%;
-  height: 360px;
-  object-fit: cover;
-  object-position: top;
+  height: auto; /* 照 Figma:整張手機截圖完整顯示 */
   display: block;
 }
 
@@ -226,9 +224,7 @@ p {
 
 .feature img {
   width: 100%;
-  height: 520px;
-  object-fit: cover;
-  object-position: top;
+  height: auto; /* 照 Figma:整張手機截圖完整顯示 */
   display: block;
 }
 
